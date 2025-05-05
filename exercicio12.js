@@ -11,5 +11,7 @@ class Veiculo {
     }
 }
 
-let veiculo1 = new veiculo("Toyota", "Corolla", 2022, 'Carro') 
-let veiculo2 = new veiculo("Honda", "CBR 600RR", 2021, 'Motocicleta')
+let veiculo1 = new Veiculo("Toyota", "Corolla", 2022, 'Carro');
+let veiculo2 = new Veiculo("Honda", "CBR 600RR", 2021, 'Motocicleta');
+
+console.log(`\n ${veiculo1.exibirDetalhes()} \n ${veiculo2.exibirDetalhes()}`)
