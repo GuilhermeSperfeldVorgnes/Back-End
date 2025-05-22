@@ -1,56 +1,36 @@
-let dia = 7;
+import ul from 'readline-sync';
 
-if (dia == 1) console.log("Domingo");
+let dia = ul.questionInt("Informe um valor de 1 a 7: ");
 
-if (dia == 2) console.log("Segunda");
-
-if (dia == 3) console.log("Terça");
-
-if (dia == 4) console.log("Quarta");
-
-if (dia == 5) console.log("Quinta");
-
-if (dia == 6) console.log("Sexta");
-
-if (dia == 7) console.log("Sabado");
-
-/*
-let readline = require('readline');
-
-let rl = readline.createInterface({
-input: process.stdin,
-output: process.stdout
-});
-
-rl.question('Digite um número de 1 a 7 para representar um dia da semana: ', (numeroDia) => {
-let dia = parseInt(numeroDia);
-
-// Switch case (como um if/else)
-switch(dia) {
-case 1:
-console.log("Domingo");
-break;
-case 2:
-console.log("Segunda-feira");
-break;
-case 3:
-console.log("Terça-feira");
-break;
-case 4:
-console.log("Quarta-feira");
-break;
-case 5:
-console.log("Quinta-feira");
-break;
-case 6:
-console.log("Sexta-feira");
-break;
-case 7:
-console.log("Sábado");
-break;
-default:
-console.log("Número inválido! Digite um número de 1 a 7.");
+switch (dia) {
+    case 1:
+        console.log("Domingo");
+        break;
+    case 2:
+        console.log("Segunda");
+        break;
+    case 3:
+        console.log("Terça");
+        break;
+    case 4:
+        console.log("Quarta");
+        break;
+    case 5:
+        console.log("Quinta");
+        break;
+    case 6:
+        console.log("Sexta");
+        break;
+    case 7:
+        console.log("Sabado");
+        break;
+    default:
+        console.log("Valor invalido!");
+        break;
 }
 
-rl.close();
-});*/
+/* 
+
+node "exercicio13.js"
+
+*/

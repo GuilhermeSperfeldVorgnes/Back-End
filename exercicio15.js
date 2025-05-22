@@ -1,48 +1,23 @@
+import rl from 'readline-sync';
 
-let readline = require('readline');
+let x = rl.question("informe o primeiro valor: ");
+let y = rl.question("informe o segundo valor: ");
+let op = rl.questionInt("Escolha uma opção: \n[1] Soma \n[2] Subtração \n[3] Multiplicação \n[4] Divisão \n Informe a opção desejada: ");
 
-let rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-rl.question('Digite o 1º número: ', (num1) => {
-
-    rl.question('Digite o 2º número: ', (num2) => {
-        
-        rl.question('Digite qual operação vc quer (+,-,*,/): ', (operacao) => {
-
-
-            num1 = parseFloat(num1);
-            num2 = parseFloat(num2);
-
-            switch(operacao) {
-                case '+':
-                    resultado = num1 + num2;
-                    console.log(`${num1} + ${num2} = ${resultado}`);
-                    break;
-                
-                case '-':
-                    resultado = num1 - num2;
-                    console.log(`${num1} - ${num2} = ${resultado}`);
-                    break;  
-                    
-                case '*':
-                    resultado = num1 * num2;
-                    console.log(`${num1} * ${num2} = ${resultado}`);
-                    break;
-
-                case '/':
-                    resultado = num1 / num2;
-                    console.log(`${num1} / ${num2} = ${resultado}`);
-                    break;
-
-                default:
-                    console.log("Operação incorreta!");
-            }
-            rl.close();
-        });
-    
-    });
-});
-
+switch (op) {
+    case 1:
+        console.log(`${x} + ${y} = ${x+y}`);
+        break;
+    case 2:
+        console.log(`${x} - ${y} = ${x-y}`);
+        break;
+    case 3:
+        console.log(`${x} * ${y} = ${x*y}`);
+        break;
+    case 4:
+        console.log(`${x} / ${y} = ${x/y}`);
+        break;
+    default:
+        console.log("Opção incorreta!");
+        break;
+}
