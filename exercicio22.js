@@ -1,5 +1,3 @@
-import rl from 'readline-sync';
-
 const pessoa = {
     nome: "Carlos Eduardo dos Santos",
     dtNacimenta: "33/03/3113",
