@@ -16,5 +16,5 @@ while (cnt <= aluno) {
     console.log(`A media do ${cnt}º aluno, é de: ${mdaluno/4}`);
     medturma += mdaluno;
     mdaluno = 0;
-    bimestre = 1;
+    bimestre = 1
 }
